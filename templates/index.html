@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container mt-4">
+
+
+    <main>
+        <p>Привет, {{ user.name }}!</p>
+        <p>Поздравляю! Всё работает!</p>
+        <img src="https://avatars.mds.yandex.net/i?id=8d5590261f9ac7748ca83348d78880dac118d532-5219731-images-thumbs&n=13"
+             crossorigin="anonymous">
+        <a href="{{ url_for('users.logout') }}" class="btn btn-primary">Выход</a>
+    </main>
+</body>
+</html>
